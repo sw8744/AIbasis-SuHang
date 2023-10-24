@@ -16,8 +16,9 @@ pip install matplotlib
 
 ### 3. 결과
 > Train Score : 0.42515822592183095
+> 
 > Test Score : 0.4257265982893499
 
 이런 식으로 Train Score와 Test Score가 비슷하게 나오므로 과소적합이라 볼 수 있다.
 
-다중회귀보다 KNN이 더 잘 나오긴 한다. 72% 정도. KNN 쓰면 안되나? ㅠ
+~~다중회귀보다 KNN이 더 잘 나오긴 한다. 72% 정도. KNN 쓰면 안되나? ㅠ~~
