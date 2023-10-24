@@ -58,18 +58,25 @@ plt.show()
 print('----------------------------------------')
 print('<서울 부동산 가격 예측 프로그램>')
 print('이 프로그램은 무료로 가격을 예측해 줍니다!')
+print('자치구 : 강남구, 강동구, 강북구, 강서구, 관악구, 광진구, 구로구, 금천구, 노원구, 도봉구, 동대문구, 동작구, 마포구, 서대문구, 서초구, 성동구, 성북구, 송파구, 양천구, 영등포구, 용산구, 은평구, 종로구, 중구, 중랑구')
 print('----------------------------------------')
 nameJachigu = ['강남구', '강동구', '강북구', '강서구', '관악구', '광진구', '구로구', '금천구', '노원구', '도봉구', '동대문구', '동작구', '마포구', '서대문구', '서초구', '성동구', '성북구', '송파구', '양천구', '영등포구', '용산구', '은평구', '종로구', '중구', '중랑구']
 while True:
-    Jachigu = input('자치구명 : ')
-    if Jachigu in nameJachigu:
+    try:
+        while True:
+            Jachigu = input('자치구명 : ')
+            if Jachigu in nameJachigu:
+                break
+            else:
+                print('올바르지 못한 자치구입니다!')
+        Area = float(input('건물면적(㎡) : '))
+        Floor = int(input('층 : '))
+        arr = [[Jachigu, Area, Floor]]
+        df_input = pd.DataFrame(arr, columns=['자치구명', '건물면적(㎡)', '층']).to_numpy()
+        df_input[:, 0] = le.transform(df_input[:, 0])
+        price_predicted = int(model.predict(df_input)[0]) * 10000
+        print('예측 가격 :', format(price_predicted, ',d'), '원')
+        print('----------------------------------------')
+    except KeyboardInterrupt:
+        print('\n프로그램을 종료합니다.')
         break
-    else:
-        print('올바르지 못한 자치구입니다!')
-Area = float(input('건물면적(㎡) : '))
-Floor = int(input('층 : '))
-arr = [[Jachigu, Area, Floor]]
-df_input = pd.DataFrame(arr, columns=['자치구명', '건물면적(㎡)', '층']).to_numpy()
-df_input[:, 0] = le.transform(df_input[:, 0])
-price_predicted = int(model.predict(df_input)[0]) * 10000
-print('예측 가격 :', format(price_predicted, ',d'), '원')
