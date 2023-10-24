@@ -15,7 +15,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2)
 # print(X_train)
 print('Data Prepared')
 
-# 문자(자치구명, 건물용도)를 숫자로 변경
+# 문자(자치구명)를 숫자로 변경
 from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 le.fit(X_train[:, 0])
