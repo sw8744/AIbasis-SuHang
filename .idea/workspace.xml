@@ -72,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698108850570</updated>
-      <workItem from="1698108853204" duration="11377000" />
+      <workItem from="1698108853204" duration="11669000" />
     </task>
     <servers />
   </component>
@@ -80,6 +80,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AIbasis_SuHang$main.coverage" NAME="main Coverage Results" MODIFIED="1698127913899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang" />
+    <SUITE FILE_PATH="coverage/AIbasis_SuHang$main.coverage" NAME="main Coverage Results" MODIFIED="1698128247264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang" />
   </component>
 </project>

@@ -71,4 +71,5 @@ Floor = int(input('층 : '))
 arr = [[Jachigu, Area, Floor]]
 df_input = pd.DataFrame(arr, columns=['자치구명', '건물면적(㎡)', '층']).to_numpy()
 df_input[:, 0] = le.transform(df_input[:, 0])
-print('예측 가격 :', int(model.predict(df_input)[0]), '만원')
+price_predicted = int(model.predict(df_input)[0]) * 10000
+print('예측 가격 :', format(price_predicted, ',d'), '원')
