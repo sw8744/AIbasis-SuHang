@@ -1,6 +1,5 @@
-import pandas as pd
-
 # 데이터 불러오기
+import pandas as pd
 df = pd.read_csv('Dataset/Seoul_House_Price.csv', encoding='cp949', low_memory=False)
 # 필요 없는 칼럼 삭제
 df.drop(columns=['접수연도', '자치구코드', '법정동코드', '법정동명', '지번구분', '지번구분명', '본번', '부번', '건물명', '건물용도', '계약일', '토지면적(㎡)', '권리구분', '취소일', '건축년도', '신고구분', '신고한 개업공인중개사 시군구명'], inplace=True)
