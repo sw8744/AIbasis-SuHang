@@ -13,3 +13,11 @@ pip install pandas
 pip install matplotlib
 ```
 위의 명령어를 한 줄 씩 CMD에 입력하여 라이브러리를 설치한다.
+
+### 3. 결과
+> Train Score : 0.42515822592183095
+> Test Score : 0.4257265982893499
+
+이런 식으로 Train Score와 Test Score가 비슷하게 나오므로 과소적합이라 볼 수 있다.
+
+다중회귀보다 KNN이 더 잘 나오긴 한다. 72% 정도. KNN 쓰면 안되나? ㅠ
