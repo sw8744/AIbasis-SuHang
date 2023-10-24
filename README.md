@@ -4,7 +4,7 @@
 
 ## 2. 사용법
 ### 1. 기본 설정
-프로젝트 파일 안에 Dataset 이라는 폴더를 만든 후, 여기에 [Seoul_House_Price.csv](https://drive.google.com/file/d/1mCtFQX-__AS8-88yXl4WCxcuIhsSeiYh/view?usp=sharing)를 다운로드 받아 폴더 안에 붙여넣고 실행해야 한다.
+프로젝트 폴더 안에 Dataset 이라는 폴더를 만든 후, 여기에 [Seoul_House_Price.csv](https://drive.google.com/file/d/1mCtFQX-__AS8-88yXl4WCxcuIhsSeiYh/view?usp=sharing)를 다운로드 받아 폴더 안에 붙여넣고 실행해야 한다.
 
 ### 2. 라이브러리 설정
 ```
