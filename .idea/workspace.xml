@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb379766-573e-4993-9fb0-b1e7ee54635d" name="Changes" comment="">
-      <change afterPath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/main_tree.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/.idea/workspace.xml" beforeDir="false" afterPath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/README.md" beforeDir="false" afterPath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/README.md" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/main_KNN.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/main_KNN.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/main_split.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/main_split.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +87,7 @@
       <workItem from="1698133746028" duration="5347000" />
       <workItem from="1698146200550" duration="3665000" />
       <workItem from="1698155908467" duration="1567000" />
-      <workItem from="1698217770745" duration="1785000" />
+      <workItem from="1698217770745" duration="1872000" />
     </task>
     <servers />
   </component>
