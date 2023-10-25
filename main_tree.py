@@ -15,7 +15,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2)
 # print(X_train)
 print('Data Prepared')
 
-# 문자(자치구명, 건물용도)를 숫자로 변경
+# 문자(자치구명)를 숫자로 변경
 from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 le.fit(X_train[:, 0])
@@ -23,19 +23,18 @@ X_train[:, 0] = le.transform(X_train[:, 0])
 X_test[:, 0] = le.transform(X_test[:, 0])
 # print(X_train)
 
-# K-Nearest-Neighbors 알고리즘 사용
+# 의사결정 트리 알고리즘 사용
 # nameJachigu = ['강남구', '강동구', '강북구', '강서구', '관악구', '광진구', '구로구', '금천구', '노원구', '도봉구', '동대문구', '동작구', '마포구', '서대문구', '서초구', '성동구', '성북구', '송파구', '양천구', '영등포구', '용산구', '은평구', '종로구', '중구', '중랑구']
 # print(len(nameJachigu))
-from sklearn.neighbors import KNeighborsRegressor
-model = KNeighborsRegressor(n_neighbors=11)
+from sklearn import tree
+model = tree.DecisionTreeRegressor()
 print('Model Learning Start')
 model.fit(X_train, Y_train)
 print('Model Learning End')
 # print(model.predict(X_test))
 print('Train Score :', model.score(X_train, Y_train))
 print('Test Score :', model.score(X_test, Y_test))
-# Train Score : 0.7190557420613956 / Test Score : 0.6766586516808314
-# 다중회귀보다 더 높은 정확도를 보여줌.
+# Train Score : 0.8199007481525984 / Test Score : 0.7042106067856249
 
 # 그래프에 나타내기 위한 차원 축소
 from sklearn.decomposition import PCA

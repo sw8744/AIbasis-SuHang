@@ -12,6 +12,8 @@ print('Data Prepared')
 
 # 훈련 데이터와 테스트 데이터 분리
 from sklearn.model_selection import train_test_split
+train_score_sum = 0
+test_score_sum = 0
 
 # 강남구 다중회귀
 from sklearn.linear_model import LinearRegression
@@ -24,6 +26,8 @@ model_Gangnam.fit(X_Gangnam_train, Y_Gangnam_train)
 print('강남구 Model Learning End')
 print('강남구 Train Score :', model_Gangnam.score(X_Gangnam_train, Y_Gangnam_train))
 print('강남구 Test Score :', model_Gangnam.score(X_Gangnam_test, Y_Gangnam_test))
+train_score_sum += model_Gangnam.score(X_Gangnam_train, Y_Gangnam_train)
+test_score_sum += model_Gangnam.score(X_Gangnam_test, Y_Gangnam_test)
 
 # 강동구 다중회귀
 model_Gangdong = LinearRegression()
@@ -35,6 +39,8 @@ model_Gangdong.fit(X_Gangdong_train, Y_Gangdong_train)
 print('강동구 Model Learning End')
 print('강동구 Train Score :', model_Gangdong.score(X_Gangdong_train, Y_Gangdong_train))
 print('강동구 Test Score :', model_Gangdong.score(X_Gangdong_test, Y_Gangdong_test))
+train_score_sum += model_Gangdong.score(X_Gangdong_train, Y_Gangdong_train)
+test_score_sum += model_Gangdong.score(X_Gangdong_test, Y_Gangdong_test)
 
 # 강북구 다중회귀
 model_Gangbuk = LinearRegression()
@@ -46,6 +52,8 @@ model_Gangbuk.fit(X_Gangbuk_train, Y_Gangbuk_train)
 print('강북구 Model Learning End')
 print('강북구 Train Score :', model_Gangbuk.score(X_Gangbuk_train, Y_Gangbuk_train))
 print('강북구 Test Score :', model_Gangbuk.score(X_Gangbuk_test, Y_Gangbuk_test))
+train_score_sum += model_Gangbuk.score(X_Gangbuk_train, Y_Gangbuk_train)
+test_score_sum += model_Gangbuk.score(X_Gangbuk_test, Y_Gangbuk_test)
 
 # 강서구 다중회귀
 model_Gangseo = LinearRegression()
@@ -57,6 +65,8 @@ model_Gangseo.fit(X_Gangseo_train, Y_Gangseo_train)
 print('강서구 Model Learning End')
 print('강서구 Train Score :', model_Gangseo.score(X_Gangseo_train, Y_Gangseo_train))
 print('강서구 Test Score :', model_Gangseo.score(X_Gangseo_test, Y_Gangseo_test))
+train_score_sum += model_Gangseo.score(X_Gangseo_train, Y_Gangseo_train)
+test_score_sum += model_Gangseo.score(X_Gangseo_test, Y_Gangseo_test)
 
 # 관악구 다중회귀
 model_Gwanak = LinearRegression()
@@ -68,6 +78,8 @@ model_Gwanak.fit(X_Gwanak_train, Y_Gwanak_train)
 print('관악구 Model Learning End')
 print('관악구 Train Score :', model_Gwanak.score(X_Gwanak_train, Y_Gwanak_train))
 print('관악구 Test Score :', model_Gwanak.score(X_Gwanak_test, Y_Gwanak_test))
+train_score_sum += model_Gwanak.score(X_Gwanak_train, Y_Gwanak_train)
+test_score_sum += model_Gwanak.score(X_Gwanak_test, Y_Gwanak_test)
 
 # 광진구 다중회귀
 model_Gwangjin = LinearRegression()
@@ -79,6 +91,8 @@ model_Gwangjin.fit(X_Gwangjin_train, Y_Gwangjin_train)
 print('광진구 Model Learning End')
 print('광진구 Train Score :', model_Gwangjin.score(X_Gwangjin_train, Y_Gwangjin_train))
 print('광진구 Test Score :', model_Gwangjin.score(X_Gwangjin_test, Y_Gwangjin_test))
+train_score_sum += model_Gwangjin.score(X_Gwangjin_train, Y_Gwangjin_train)
+test_score_sum += model_Gwangjin.score(X_Gwangjin_test, Y_Gwangjin_test)
 
 # 구로구 다중회귀
 model_Guro = LinearRegression()
@@ -90,6 +104,8 @@ model_Guro.fit(X_Guro_train, Y_Guro_train)
 print('구로구 Model Learning End')
 print('구로구 Train Score :', model_Guro.score(X_Guro_train, Y_Guro_train))
 print('구로구 Test Score :', model_Guro.score(X_Guro_test, Y_Guro_test))
+train_score_sum += model_Guro.score(X_Guro_train, Y_Guro_train)
+test_score_sum += model_Guro.score(X_Guro_test, Y_Guro_test)
 
 # 금천구 다중회귀
 model_Geumcheon = LinearRegression()
@@ -101,6 +117,8 @@ model_Geumcheon.fit(X_Geumcheon_train, Y_Geumcheon_train)
 print('금천구 Model Learning End')
 print('금천구 Train Score :', model_Geumcheon.score(X_Geumcheon_train, Y_Geumcheon_train))
 print('금천구 Test Score :', model_Geumcheon.score(X_Geumcheon_test, Y_Geumcheon_test))
+train_score_sum += model_Geumcheon.score(X_Geumcheon_train, Y_Geumcheon_train)
+test_score_sum += model_Geumcheon.score(X_Geumcheon_test, Y_Geumcheon_test)
 
 # 노원구 다중회귀
 model_Nowon = LinearRegression()
@@ -112,6 +130,8 @@ model_Nowon.fit(X_Nowon_train, Y_Nowon_train)
 print('노원구 Model Learning End')
 print('노원구 Train Score :', model_Nowon.score(X_Nowon_train, Y_Nowon_train))
 print('노원구 Test Score :', model_Nowon.score(X_Nowon_test, Y_Nowon_test))
+train_score_sum += model_Nowon.score(X_Nowon_train, Y_Nowon_train)
+test_score_sum += model_Nowon.score(X_Nowon_test, Y_Nowon_test)
 
 # 도봉구 다중회귀
 model_Dobong = LinearRegression()
@@ -123,6 +143,8 @@ model_Dobong.fit(X_Dobong_train, Y_Dobong_train)
 print('도봉구 Model Learning End')
 print('도봉구 Train Score :', model_Dobong.score(X_Dobong_train, Y_Dobong_train))
 print('도봉구 Test Score :', model_Dobong.score(X_Dobong_test, Y_Dobong_test))
+train_score_sum += model_Dobong.score(X_Dobong_train, Y_Dobong_train)
+test_score_sum += model_Dobong.score(X_Dobong_test, Y_Dobong_test)
 
 # 동대문구 다중회귀
 model_Dongdaemun = LinearRegression()
@@ -134,6 +156,8 @@ model_Dongdaemun.fit(X_Dongdaemun_train, Y_Dongdaemun_train)
 print('동대문구 Model Learning End')
 print('동대문구 Train Score :', model_Dongdaemun.score(X_Dongdaemun_train, Y_Dongdaemun_train))
 print('동대문구 Test Score :', model_Dongdaemun.score(X_Dongdaemun_test, Y_Dongdaemun_test))
+train_score_sum += model_Dongdaemun.score(X_Dongdaemun_train, Y_Dongdaemun_train)
+test_score_sum += model_Dongdaemun.score(X_Dongdaemun_test, Y_Dongdaemun_test)
 
 # 동작구 다중회귀
 model_Dongjak = LinearRegression()
@@ -145,6 +169,8 @@ model_Dongjak.fit(X_Dongjak_train, Y_Dongjak_train)
 print('동작구 Model Learning End')
 print('동작구 Train Score :', model_Dongjak.score(X_Dongjak_train, Y_Dongjak_train))
 print('동작구 Test Score :', model_Dongjak.score(X_Dongjak_test, Y_Dongjak_test))
+train_score_sum += model_Dongjak.score(X_Dongjak_train, Y_Dongjak_train)
+test_score_sum += model_Dongjak.score(X_Dongjak_test, Y_Dongjak_test)
 
 # 마포구 다중회귀
 model_Mapo = LinearRegression()
@@ -156,6 +182,8 @@ model_Mapo.fit(X_Mapo_train, Y_Mapo_train)
 print('마포구 Model Learning End')
 print('마포구 Train Score :', model_Mapo.score(X_Mapo_train, Y_Mapo_train))
 print('마포구 Test Score :', model_Mapo.score(X_Mapo_test, Y_Mapo_test))
+train_score_sum += model_Mapo.score(X_Mapo_train, Y_Mapo_train)
+test_score_sum += model_Mapo.score(X_Mapo_test, Y_Mapo_test)
 
 # 서대문구 다중회귀
 model_Seodaemun = LinearRegression()
@@ -167,6 +195,8 @@ model_Seodaemun.fit(X_Seodaemun_train, Y_Seodaemun_train)
 print('서대문구 Model Learning End')
 print('서대문구 Train Score :', model_Seodaemun.score(X_Seodaemun_train, Y_Seodaemun_train))
 print('서대문구 Test Score :', model_Seodaemun.score(X_Seodaemun_test, Y_Seodaemun_test))
+train_score_sum += model_Seodaemun.score(X_Seodaemun_train, Y_Seodaemun_train)
+test_score_sum += model_Seodaemun.score(X_Seodaemun_test, Y_Seodaemun_test)
 
 # 서초구 다중회귀
 model_Seochu = LinearRegression()
@@ -178,6 +208,8 @@ model_Seochu.fit(X_Seochu_train, Y_Seochu_train)
 print('서초구 Model Learning End')
 print('서초구 Train Score :', model_Seochu.score(X_Seochu_train, Y_Seochu_train))
 print('서초구 Test Score :', model_Seochu.score(X_Seochu_test, Y_Seochu_test))
+train_score_sum += model_Seochu.score(X_Seochu_train, Y_Seochu_train)
+test_score_sum += model_Seochu.score(X_Seochu_test, Y_Seochu_test)
 
 # 성동구 다중회귀
 model_Seongdong = LinearRegression()
@@ -189,6 +221,8 @@ model_Seongdong.fit(X_Seongdong_train, Y_Seongdong_train)
 print('성동구 Model Learning End')
 print('성동구 Train Score :', model_Seongdong.score(X_Seongdong_train, Y_Seongdong_train))
 print('성동구 Test Score :', model_Seongdong.score(X_Seongdong_test, Y_Seongdong_test))
+train_score_sum += model_Seongdong.score(X_Seongdong_train, Y_Seongdong_train)
+test_score_sum += model_Seongdong.score(X_Seongdong_test, Y_Seongdong_test)
 
 # 성북구 다중회귀
 model_Seongbuk = LinearRegression()
@@ -200,6 +234,8 @@ model_Seongbuk.fit(X_Seongbuk_train, Y_Seongbuk_train)
 print('성북구 Model Learning End')
 print('성북구 Train Score :', model_Seongbuk.score(X_Seongbuk_train, Y_Seongbuk_train))
 print('성북구 Test Score :', model_Seongbuk.score(X_Seongbuk_test, Y_Seongbuk_test))
+train_score_sum += model_Seongbuk.score(X_Seongbuk_train, Y_Seongbuk_train)
+test_score_sum += model_Seongbuk.score(X_Seongbuk_test, Y_Seongbuk_test)
 
 # 송파구 다중회귀
 model_Songpa = LinearRegression()
@@ -211,6 +247,8 @@ model_Songpa.fit(X_Songpa_train, Y_Songpa_train)
 print('송파구 Model Learning End')
 print('송파구 Train Score :', model_Songpa.score(X_Songpa_train, Y_Songpa_train))
 print('송파구 Test Score :', model_Songpa.score(X_Songpa_test, Y_Songpa_test))
+train_score_sum += model_Songpa.score(X_Songpa_train, Y_Songpa_train)
+test_score_sum += model_Songpa.score(X_Songpa_test, Y_Songpa_test)
 
 # 양천구 다중회귀
 model_Yangcheon = LinearRegression()
@@ -222,6 +260,8 @@ model_Yangcheon.fit(X_Yangcheon_train, Y_Yangcheon_train)
 print('양천구 Model Learning End')
 print('양천구 Train Score :', model_Yangcheon.score(X_Yangcheon_train, Y_Yangcheon_train))
 print('양천구 Test Score :', model_Yangcheon.score(X_Yangcheon_test, Y_Yangcheon_test))
+train_score_sum += model_Yangcheon.score(X_Yangcheon_train, Y_Yangcheon_train)
+test_score_sum += model_Yangcheon.score(X_Yangcheon_test, Y_Yangcheon_test)
 
 # 영등포구 다중회귀
 model_Yeongdeungpo = LinearRegression()
@@ -233,6 +273,8 @@ model_Yeongdeungpo.fit(X_Yeongdeungpo_train, Y_Yeongdeungpo_train)
 print('영등포구 Model Learning End')
 print('영등포구 Train Score :', model_Yeongdeungpo.score(X_Yeongdeungpo_train, Y_Yeongdeungpo_train))
 print('영등포구 Test Score :', model_Yeongdeungpo.score(X_Yeongdeungpo_test, Y_Yeongdeungpo_test))
+train_score_sum += model_Yeongdeungpo.score(X_Yeongdeungpo_train, Y_Yeongdeungpo_train)
+test_score_sum += model_Yeongdeungpo.score(X_Yeongdeungpo_test, Y_Yeongdeungpo_test)
 
 # 용산구 다중회귀
 model_Yongsan = LinearRegression()
@@ -244,6 +286,8 @@ model_Yongsan.fit(X_Yongsan_train, Y_Yongsan_train)
 print('용산구 Model Learning End')
 print('용산구 Train Score :', model_Yongsan.score(X_Yongsan_train, Y_Yongsan_train))
 print('용산구 Test Score :', model_Yongsan.score(X_Yongsan_test, Y_Yongsan_test))
+train_score_sum += model_Yongsan.score(X_Yongsan_train, Y_Yongsan_train)
+test_score_sum += model_Yongsan.score(X_Yongsan_test, Y_Yongsan_test)
 
 # 은평구 다중회귀
 model_Eunpyeong = LinearRegression()
@@ -255,6 +299,8 @@ model_Eunpyeong.fit(X_Eunpyeong_train, Y_Eunpyeong_train)
 print('은평구 Model Learning End')
 print('은평구 Train Score :', model_Eunpyeong.score(X_Eunpyeong_train, Y_Eunpyeong_train))
 print('은평구 Test Score :', model_Eunpyeong.score(X_Eunpyeong_test, Y_Eunpyeong_test))
+train_score_sum += model_Eunpyeong.score(X_Eunpyeong_train, Y_Eunpyeong_train)
+test_score_sum += model_Eunpyeong.score(X_Eunpyeong_test, Y_Eunpyeong_test)
 
 # 종로구 다중회귀
 model_Jongno = LinearRegression()
@@ -266,6 +312,8 @@ model_Jongno.fit(X_Jongno_train, Y_Jongno_train)
 print('종로구 Model Learning End')
 print('종로구 Train Score :', model_Jongno.score(X_Jongno_train, Y_Jongno_train))
 print('종로구 Test Score :', model_Jongno.score(X_Jongno_test, Y_Jongno_test))
+train_score_sum += model_Jongno.score(X_Jongno_train, Y_Jongno_train)
+test_score_sum += model_Jongno.score(X_Jongno_test, Y_Jongno_test)
 
 # 중구 다중회귀
 model_Jung = LinearRegression()
@@ -277,6 +325,8 @@ model_Jung.fit(X_Jung_train, Y_Jung_train)
 print('중구 Model Learning End')
 print('중구 Train Score :', model_Jung.score(X_Jung_train, Y_Jung_train))
 print('중구 Test Score :', model_Jung.score(X_Jung_test, Y_Jung_test))
+train_score_sum += model_Jung.score(X_Jung_train, Y_Jung_train)
+test_score_sum += model_Jung.score(X_Jung_test, Y_Jung_test)
 
 # 중랑구 다중회귀
 model_Jungnang = LinearRegression()
@@ -288,6 +338,13 @@ model_Jungnang.fit(X_Jungnang_train, Y_Jungnang_train)
 print('중랑구 Model Learning End')
 print('중랑구 Train Score :', model_Jungnang.score(X_Jungnang_train, Y_Jungnang_train))
 print('중랑구 Test Score :', model_Jungnang.score(X_Jungnang_test, Y_Jungnang_test))
+train_score_sum += model_Jungnang.score(X_Jungnang_train, Y_Jungnang_train)
+test_score_sum += model_Jungnang.score(X_Jungnang_test, Y_Jungnang_test)
+
+print('Average Train Score :', train_score_sum / 25)
+print('Average Test Score :', test_score_sum / 25)
+# Average Train Score : 0.4775744823960981 / Average Test Score : 0.4756067276979516
+# 과소적합 가능성 존재.
 
 # nameJachigu = ['강남구', '강동구', '강북구', '강서구', '관악구', '광진구', '구로구', '금천구', '노원구', '도봉구', '동대문구', '동작구', '마포구', '서대문구', '서초구', '성동구', '성북구', '송파구', '양천구', '영등포구', '용산구', '은평구', '종로구', '중구', '중랑구']
 # print(len(nameJachigu))
