@@ -424,6 +424,7 @@ while True:
         print('예측 가격 :', format(price_predicted, ',d'), '원')
         print('----------------------------------------')
     except UserWarning:
+        print('', end='')
         continue
 
     except KeyboardInterrupt:

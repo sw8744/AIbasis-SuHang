@@ -35,6 +35,12 @@ print('Model Learning End')
 print('Train Score :', model.score(X_train, Y_train))
 print('Test Score :', model.score(X_test, Y_test))
 # Train Score : 0.8199007481525984 / Test Score : 0.7042106067856249
+# 모델 저장하기
+'''
+import pickle
+pickle.dump(model, open('main_tree.pkl', 'wb'))
+print('Model Saved')
+'''
 
 # 그래프에 나타내기 위한 차원 축소
 from sklearn.decomposition import PCA

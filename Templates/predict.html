@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title style="text-align: center;">서울시 부동산 가격 예측 프로그램</title>
+    </head>
+    <body>
+        <center>
+            <div style="text-align: left;">
+            <h1>서울시 부동산 가격 예측 프로그램</h1>
+            <h2>인천과학고등학교 인공지능기초 수행평가</h2>
+            <form method="GET", action="{{url_for('home')}}">
+                <strong>
+                    <h3>다중회귀 예측 값 : {{pred_main}} 원</h3>
+                    <h3>의사결정 트리 예측 값 : {{pred_tree}} 원</h3>
+                    <h3>KNN 예측 값 : {{pred_KNN}} 원</h3>
+                </strong>
+            </form>
+        </center>
+    </div>
+    </body>
+</html>

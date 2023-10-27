@@ -36,6 +36,12 @@ print('Train Score :', model.score(X_train, Y_train))
 print('Test Score :', model.score(X_test, Y_test))
 # Train Score : 0.42515822592183095, Test Score : 0.4257265982893499
 # Train Data가 Test Data보다 더 작으므로 과소적합됨을 알 수 있음.
+# 모델 저장하기
+'''
+import pickle
+pickle.dump(model, open('main.pkl', 'wb'))
+print('Model Saved')
+'''
 
 # 그래프에 나타내기 위한 차원 축소
 from sklearn.decomposition import PCA

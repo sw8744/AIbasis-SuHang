@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title style="text-align: center;">서울시 부동산 가격 예측 프로그램</title>
+    </head>
+    <body>
+        <center>
+            <div style="text-align: left;">
+            <h1>서울시 부동산 가격 예측 프로그램</h1>
+            <h2>인천과학고등학교 인공지능기초 수행평가</h2>
+            <form method="post", action="{{url_for('home')}}">
+                <strong>
+                    <p>자치구   <input type="text", name="Jachigu"></p>
+                    <p>건물면적(㎡)   <input type="text", name="Area"></p>
+                    <p>층수   <input type="text", name="Floor"></p>
+                    <input type="submit" value="Go!">
+                </strong>
+            </form>
+        </center>
+    </div>
+    </body>
+</html>
