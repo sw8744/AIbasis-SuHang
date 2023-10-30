@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb379766-573e-4993-9fb0-b1e7ee54635d" name="Changes" comment="">
-      <change afterPath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/Templates/home.html" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/server.py" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/Templates/home.css" afterDir="false" />
       <change beforePath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/.idea/workspace.xml" beforeDir="false" afterPath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/main.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/main.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/main_KNN.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/main_KNN.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/main_split.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/main_split.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/main_tree.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/main_tree.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/Templates/home.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/Templates/home.html" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/Templates/predict.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/Templates/predict.html" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/server.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +61,7 @@
       <recent name="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Flask server.AIbasis-SuHang">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="AIbasis-SuHang" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,6 +84,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="AIbasis-SuHang" type="Python.FlaskServer">
+      <module name="AIbasis-SuHang" />
+      <option name="target" value="/$PROJECT_DIR$/server.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -103,7 +116,8 @@
       <workItem from="1698217770745" duration="1907000" />
       <workItem from="1698275885629" duration="933000" />
       <workItem from="1698289389858" duration="519000" />
-      <workItem from="1698289927010" duration="8601000" />
+      <workItem from="1698289927010" duration="11789000" />
+      <workItem from="1698659850770" duration="2168000" />
     </task>
     <servers />
   </component>
@@ -117,6 +131,7 @@
     <SUITE FILE_PATH="coverage/AIbasis_SuHang$main_KNN.coverage" NAME="main_KNN Coverage Results" MODIFIED="1698289817281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang" />
     <SUITE FILE_PATH="coverage/AIbasis_SuHang$main_lightgbm.coverage" NAME="main_lightgbm Coverage Results" MODIFIED="1698134542502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang" />
     <SUITE FILE_PATH="coverage/AIbasis_SuHang$main_split.coverage" NAME="main_split Coverage Results" MODIFIED="1698275912405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang" />
+    <SUITE FILE_PATH="coverage/AIbasis_SuHang$AIbasis_SuHang.coverage" NAME="AIbasis-SuHang Coverage Results" MODIFIED="1698668139460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AIbasis_SuHang$server.coverage" NAME="server Coverage Results" MODIFIED="1698362870068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang" />
     <SUITE FILE_PATH="coverage/AIbasis_SuHang$main_NeuralNetwork.coverage" NAME="main_NeuralNetwork Coverage Results" MODIFIED="1698135356833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang" />
     <SUITE FILE_PATH="coverage/AIbasis_SuHang$main_upgrade.coverage" NAME="main_upgrade Coverage Results" MODIFIED="1698190167923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/인천과고/AIbasis-SuHang" />

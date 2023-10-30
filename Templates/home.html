@@ -3,19 +3,31 @@
         <title style="text-align: center;">서울시 부동산 가격 예측 프로그램</title>
     </head>
     <body>
-        <center>
-            <div style="text-align: left;">
-            <h1>서울시 부동산 가격 예측 프로그램</h1>
-            <h2>인천과학고등학교 인공지능기초 수행평가</h2>
-            <form method="post", action="{{url_for('home')}}">
-                <strong>
-                    <p>자치구   <input type="text", name="Jachigu"></p>
-                    <p>건물면적(㎡)   <input type="text", name="Area"></p>
-                    <p>층수   <input type="text", name="Floor"></p>
-                    <input type="submit" value="Go!">
-                </strong>
-            </form>
-        </center>
+        <div class="img_div" style="text-align: center;">
+            <img class="logo" style="margin-top: 10px; margin-left: 10px; width: 7rem; height: 7rem; margin-right: 10px; margin-bottom: 10px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Logo_of_Seoul%2C_South_Korea.svg/1200px-Logo_of_Seoul%2C_South_Korea.svg.png">
+            <img class="logo" style="margin-top: 10px; margin-left: 10px; width: 7rem; height: 7rem; margin-right: 10px; margin-bottom: 10px;" src="https://i.namu.wiki/i/FB8HRnp0761BDtOd4jRcTXddUKY7Bf8cl1uJmPz-teBAlhAie_yI6k0f0GRns02f_wBejx8eYvDz-_fJdoWf3r9tJkrQMMctLWzwghFU3k1k5YUZqoblulC-1ghENIQVs2_MyAf_ntLk8RJiMK3FQw.webp">
+        </div>
+        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">서울시 부동산 가격 예측 프로그램</h1>
+        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">인천과학고등학교 인공지능기초 수행평가</h2>
+        <form method="post", action="{{url_for('home')}}">
+            <table style="margin-left:auto; margin-right:auto;">
+                <tr>
+                    <td><p style="text-align: center;">자치구</td>
+                    <td><input type="text" name="Jachigu"></td>
+                </tr>
+                <tr>
+                    <td><p style="text-align: center;">건물면적(㎡)</p></td>
+                    <td><input type="text", name="Area"></td>
+                </tr>
+                <tr>
+                    <td><p style="text-align: center;">층수</p></td>
+                    <td><input type="text", name="Floor"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" style="width: 100%; background-color: #78A752; list-style: none;" value="Go!"></td>
+                </tr>
+            </table>
+        </form>
     </div>
     </body>
 </html>

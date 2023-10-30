@@ -33,4 +33,4 @@ def home():
         return render_template('predict.html', pred_main=pred_main, pred_tree=pred_tree, pred_KNN=pred_KNN)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run('0.0.0.0', port=5000)
