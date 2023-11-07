@@ -38,12 +38,13 @@ print('Test Score :', model.score(X_test, Y_test))
 # 다중회귀보다 더 높은 정확도를 보여줌.
 
 # 모델 저장하기
-
+'''
 import pickle
 pickle.dump(model, open('main_KNN.pkl', 'wb'))
 print('Model Saved')
+'''
 
-
+'''
 # 그래프에 나타내기 위한 차원 축소
 from sklearn.decomposition import PCA
 pca = PCA(n_components=1) # 1차원으로 축소
@@ -52,12 +53,30 @@ X_train_pca = pca.transform(X_train)
 X_test_pca = pca.transform(X_test)
 print('Finish PCA')
 # print(X_train_pca)
+'''
 
-# 그래프로 나타내기
 import matplotlib.pyplot as plt
+'''
 plt.scatter(X_train_pca, Y_train, color='red')
 plt.xlabel('PCA')
 plt.ylabel('Price')
+plt.show()
+'''
+groups = df.groupby('자치구명')
+# x는 건물면적
+x = df.drop(columns=['자치구명', '물건금액(만원)', '층'])
+# y는 층
+y = df.drop(columns=['자치구명', '물건금액(만원)', '건물면적(㎡)'])
+# z는 물건금액
+z = df.drop(columns=['자치구명', '건물면적(㎡)', '층'])
+fig = plt.figure(figsize=(9, 6))
+ax = fig.add_subplot(111, projection='3d')
+for name, group in groups:
+    ax.scatter(group['건물면적(㎡)'], group['층'], group['물건금액(만원)'], label=name)
+ax.set_xlabel('Area')
+ax.set_ylabel('Floor')
+ax.set_zlabel('Price')
+# plt.legend(loc='upper left')
 plt.show()
 
 # 입력값을 통한 예측
