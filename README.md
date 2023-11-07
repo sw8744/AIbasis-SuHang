@@ -2,7 +2,7 @@
 ## 1. 개요
 이 프로그램은 Scikit-Learn 라이브러리에서 제공하는 다중회귀 모델과 서울열린데이터광장에서 제공하는 [서울시 부동산 실거래가 정보](https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do)를 이용하여 서울 지역의 주택 가격을 예측하는 프로그램이다.
 
-접속 주소 : http://aibasis.kro.kr:5000/
+접속 주소 : http://aibasis.kro.kr
 
 ## 2. 사용법
 ### 1. 기본 설정
